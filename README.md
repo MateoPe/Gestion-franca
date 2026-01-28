@@ -124,7 +124,7 @@ MongoDB
 
 ## Ejecución del proyecto
 Clonar el repositorio:
-git clone https://github.com/usuario/repositorio.git
+git clone https://github.com/MateoPe/Gestion-franca.git
 
 Posicionarse en la raíz del proyecto:
 cd Gestion-franca
