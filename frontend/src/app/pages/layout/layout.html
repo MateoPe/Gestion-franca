@@ -1,0 +1,26 @@
+<div class="app">
+  <aside class="sidebar">
+    <h3>ABC Platform</h3>
+    <h4>Usuario</h4>
+    <p>{{ userName }}</p>
+    <h4>Rol</h4>
+    <p>{{ role }}</p>
+    <nav>
+      @for (item of menu; track item.route) {
+      <a [routerLink]="item.route" routerLinkActive="active">
+        {{ item.label }}
+      </a>
+      }
+    </nav>
+
+    <button class="logout" (click)="logout()">Cerrar sesión</button>
+
+    <button class="theme-btn" (click)="toggleTheme()">
+      {{ isDark ? '☀️ Modo claro' : '🌙 Modo oscuro' }}
+    </button>
+  </aside>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

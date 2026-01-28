@@ -1,0 +1,50 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --sidebar-bg: #1e1e1e;
+  --sidebar-text: #ffffff;
+  --card-bg: #f5f5f5;
+  --table-bg: #ffffff;
+  --table-text: #111111;
+  --table-border: #dddddd;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --sidebar-bg: #000000;
+  --sidebar-text: #ffffff;
+  --card-bg: #1f1f1f;
+  --table-bg: #1e1e1e;
+  --table-text: #f5f5f5;
+  --table-border: #333333;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--table-bg);
+  color: var(--table-text);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--table-border);
+  color: var(--table-text);
+}
+
+th {
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}

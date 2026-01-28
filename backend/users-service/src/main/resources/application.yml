@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: users-service
+
+  data:
+    mongodb:
+      host: mongo
+      port: 27017
+      database: usuariosdb
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
