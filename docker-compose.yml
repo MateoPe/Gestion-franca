@@ -1,5 +1,12 @@
 services:
 
+  frontend:
+    build:
+      context: ./frontend
+    container_name: frontend-app
+    ports:
+      - "4200:80"
+
   mongo:
     image: mongo:7
     container_name: mongo
